@@ -1,16 +1,24 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Open_Sans  } from "next/font/google";
 import "./globals.css";
+import Footer from "./_components/Footer";
 
-const geistSans = Geist({
+
+// const helavicta = localFont({
+//   src: "../fonts/Helvetica-Bold.ttf",
+//   variable: '--font-helavicta',
+//   display: 'swap',
+// })
+const openSans = Open_Sans({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  weight:["400","500","600","700"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+// const geistMono = Geist_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,9 +33,12 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${openSans.className}  h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      {/* <h1 className="uppercase font-bold text-white text-2xl">Nexula</h1> */}
+      <body className="min-h-full dark">
+        {children}
+      </body>
     </html>
   );
 }
