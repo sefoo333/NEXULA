@@ -4,15 +4,15 @@ import { Input } from '@/components/ui/input'
 
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from '@/components/ui/select'
 import ImageAdd from './ImageAdd'
-import { useEffect, useState } from 'react'
+import {  useState } from 'react'
 import { Button } from '@/components/ui/button'
-import { Copy, Map, Send, TicketIcon, Wallet } from 'lucide-react'
+import { Copy, Map, Wallet } from 'lucide-react'
 import { addDoc, collection, doc, getDoc, increment, updateDoc } from 'firebase/firestore'
 import { db } from '@/lib/firebase'
 import { toast, Toaster } from 'sonner'
 import AnimatedBox from './ui/AnimateStyle'
 import { ShareTicket } from './ui/ShareTicket'
-import { useParams, useSearchParams } from 'next/navigation'
+import { useSearchParams } from 'next/navigation'
 
 
 /**
