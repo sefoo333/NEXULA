@@ -48,6 +48,7 @@
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
   --height-hero:calc(100vh - 90px);
+  --height-heroPhone:450px
 }
 
 @media (prefers-color-scheme: dark) {
@@ -75,6 +76,36 @@ body {
   opacity:0.8;
 }
 }
+
+
+.scroly{
+  animation: scroll 10s linear infinite;
+
+}
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* 
+      بنحرك المجموعة بنسبة -100% من عرضها. 
+      وبما إننا ضايفين gap-10 (يعني 40px) بين الحاويتين، 
+      هنطرحها عشان الحركة تكون ناعمة وبدون أي قفزة أو اهتزاز (Glitch).
+    */
+    transform: translateX(calc(-100% - 40px));
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+}
+
+/* حركة اختيارية: لو عايز الأنيميشن يقف مؤقتاً لما المستخدم يمرر الماوس عليه */
+/* .box:hover .animate-scroll {
+  animation-play-state: paused;
+} */
 
 :root {
   --background: oklch(1 0 0);

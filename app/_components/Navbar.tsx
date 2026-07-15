@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import React from 'react'
+import { NavbarPhone } from './NavbarPhone'
 
 function Navbar() {
   return (
@@ -45,29 +46,7 @@ function Navbar() {
         
         </div>
 
-        <div className="block md:hidden">
-          <button
-            className="rounded-sm bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75"
-          >
-            <span className="sr-only">Toggle menu</span>
-
-            <svg
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              className="size-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </button>
-        </div>
+       <NavbarPhone />
       </div>
     </div>
   </div>

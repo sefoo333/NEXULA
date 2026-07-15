@@ -7,6 +7,7 @@ import Wisdom from "./_components/Wisdom";
 import Ticket from "./_components/Ticket";
 import Footer from "./_components/Footer";
 import { Suspense } from "react";
+import Sponsers from "./_components/Sponsers";
 
 export default function Home() {
   return (
@@ -18,8 +19,9 @@ export default function Home() {
      <Navbar />
     <Hero />
 
-    <Speakers />
   </div>
+     <Sponsers />
+    <Speakers />
     <Wisdom />
     <Ticket />
     <Particles
