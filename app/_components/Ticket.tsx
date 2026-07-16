@@ -210,7 +210,7 @@ date:date,
         <Wallet />
         InstaPay
     </Button>
-    <Button variant={"outline"} className="py-6 hover:bg-[#2b1c1a] hover:border-[#3b2826] cursor-pointer">
+    <Button onClick={() => navigator.clipboard.writeText("01211399401")} variant={"outline"} className="py-6 hover:bg-[#2b1c1a] hover:border-[#3b2826] cursor-pointer">
         <Copy />
         01211399401
     </Button>
