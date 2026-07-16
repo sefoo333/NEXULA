@@ -5,13 +5,13 @@ import { NavbarPhone } from './NavbarPhone'
 
 function Navbar() {
   return (
-<header className="flex justify-center items-center  sticky top-5 max-xl:w-full  z-50">
+<header className="flex justify-center items-center  sticky top-5 max-md:top-0 max-xl:w-full  z-50">
   <div className=" bg-gray-100/5 mt-5 max-md:mx-2 rounded-full max-md:px-7  backdrop-blur-sm w-290 border border-gray-100/10 px-4 sm:px-6 lg:px-8">
     <div className="flex h-20 items-center justify-between">
       <div className="md:flex md:items-center md:gap-12">
         <a className="block text-teal-600" href="#">
           <span className="sr-only">Home</span>
-             <Image src="/nexula_red.svg" alt="Nexula Logo" className="w-35" width={300} height={300} />
+             <Image src="/nexula_red.svg" alt="Nexula Logo" className="w-35 max-md:w-29" width={300} height={300} />
 {/* <h1 className="text-2xl font-bold text-[#d2290e]">TED</h1> */}
         </a>
       </div>
