@@ -43,7 +43,8 @@ export function NavbarPhone() {
       <SheetContent className="!w-full">
         <SheetHeader>
           <SheetTitle>
-                      <Image src="/LOGO 2.png" alt="Nexula Logo" className=" w-40" width={300} height={300} />
+                                   <Image src="/nexula_red.svg" alt="Nexula Logo" className="w-35 mt-5" width={300} height={300} />
+
         
           </SheetTitle>
          
