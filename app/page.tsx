@@ -8,11 +8,12 @@ import Ticket from "./_components/Ticket";
 import Footer from "./_components/Footer";
 import { Suspense } from "react";
 import Sponsers from "./_components/Sponsers";
+import Loader from "./_components/Loader";
 
 export default function Home() {
   return (
 <>
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<Loader />}>
 
  <div className="parent before:w-full before:fixed before:-z-1 before:h-full before:left-0 before:top-0 before:opacity-50 before:bg-[#1d0202] flex flex-col w-full items-center justify-center">
      <Navbar />
