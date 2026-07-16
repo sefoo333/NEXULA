@@ -13,6 +13,8 @@ import { toast, Toaster } from 'sonner'
 import AnimatedBox from './ui/AnimateStyle'
 import { ShareTicket } from './ui/ShareTicket'
 import { useSearchParams } from 'next/navigation'
+import { DateInput } from './DateInput'
+import Link from 'next/link'
 
 
 /**
@@ -49,6 +51,7 @@ const sparms = useSearchParams();
 const codeTicket = `AMB${Date.now().toString().slice(0,3)}`
 
 
+const [date, setDate] = useState<Date>()
 const sendTicket = async () => {
   
   const ticketId = sparms?.get("id");
@@ -71,6 +74,7 @@ try {
 image:images[0],
 invites:0,
 code:codeTicket,
+date:date,
 
     }).then((doc) => setId(doc.id))
     
@@ -149,7 +153,7 @@ code:codeTicket,
       </SelectTrigger>
       <SelectContent>
         <SelectGroup>
-          <SelectLabel>Fruits</SelectLabel>
+          <SelectLabel>Education States</SelectLabel>
           {items.map((item) => (
             <SelectItem key={item.value} value={item.value}>
               {item.label}
@@ -172,22 +176,43 @@ code:codeTicket,
             </label>
             <Input onChange={(e) => setData((x) => ({...x,promoCode:e.target.value}))} id="promoCode" type="text" placeholder="Enter promoCode" className="py-5"  />
           </div>
+            <div className="grid gap-2">
+            <label htmlFor="email" className="text-sm font-medium text-white/80">
+              Date Transfer
+            </label>
+<DateInput date={date} setDate={setDate} />
+          </div>
+            <div className="grid gap-2">
+            <label htmlFor="email" className="text-sm font-medium text-white/80">
+              Time
+            </label>
+                  <Input
+          type="time"
+          id="time-picker-optional"
+          step="1"
+          defaultValue={`${new Date().getHours()}:${new Date().getMinutes()}:${new Date().getSeconds()}`}
+          className="appearance-none bg-background [&::-webkit-calendar-picker-indicator]:hidden py-5 [&::-webkit-calendar-picker-indicator]:appearance-none"
+        />
+
+          </div>
 
           <ImageAdd images={images} uploadImage={uploadImages} />
 
 
 <div className="buttons grid grid-cols-3 max-md:grid-cols-1 gap-6 col-span-2">
-    <Button variant={"outline"} className="py-6 hover:bg-[#2b1c1a] hover:border-[#3b2826] cursor-pointer">
+    <Link target="_blank" href="https://maps.app.goo.gl/pmHh7SeoDkhP8tdf8?g_st=aw">
+    <Button variant={"outline"} className="py-6 hover:bg-[#2b1c1a] hover:border-[#3b2826] w-full cursor-pointer">
         <Map />
         Show Map
     </Button>
+    </Link>
     <Button variant={"outline"} className="py-6 hover:bg-[#2b1c1a] hover:border-[#3b2826] cursor-pointer">
         <Wallet />
         InstaPay
     </Button>
     <Button variant={"outline"} className="py-6 hover:bg-[#2b1c1a] hover:border-[#3b2826] cursor-pointer">
         <Copy />
-        Copy Number
+        01211399401
     </Button>
 </div>
 

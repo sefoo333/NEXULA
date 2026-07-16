@@ -15,8 +15,8 @@ export default function Home() {
     <Suspense fallback={<div>Loading...</div>}>
 
  <div className="parent before:w-full before:fixed before:-z-1 before:h-full before:left-0 before:top-0 before:opacity-50 before:bg-[#1d0202] flex flex-col w-full items-center justify-center">
-  <div className="container grid grid-cols-5 gap-10">
      <Navbar />
+  <div className="container grid grid-cols-5 gap-10">
     <Hero />
 
   </div>

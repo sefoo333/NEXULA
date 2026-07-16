@@ -74,6 +74,14 @@ export const columns: ColumnDef<Payment>[] = [
     accessorKey: "invites",
     header: "Invites",
   },
+  {
+    accessorKey: "date",
+    header: "Date",
+  },
+  {
+    accessorKey: "time",
+    header: "Time",
+  },
 
 
    {

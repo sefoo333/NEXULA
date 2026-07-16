@@ -8,7 +8,7 @@ import AnimatedBox from './ui/AnimateStyle'
 
 function Hero() {
   return (
-        <div className=" relative col-span-5 flex h-hero max-md:h-heroPhone w-full flex-col items-center justify-top py-30 mb-5 overflow-hidden rounded-lg ">
+        <div className=" relative col-span-5 flex h-hero max-md:h-heroPhone w-full flex-col items-center justify-top py-30  overflow-hidden rounded-lg ">
     <AnimatedBox
     >
    <div className="b relative">

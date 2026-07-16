@@ -4,7 +4,7 @@ import AnimatedBox from './ui/AnimateStyle'
 
 function Speakers() {
   return (
-  <div className="box relative mt-20 col-span-5 w-full">
+  <div className="box relative my-20 col-span-5 w-full">
    <AnimatedBox>
      <Heading>Speakers</Heading>
      {/* boxs gap-20  grid grid-cols-4 max-2xl:grid-cols-2  max-md:grid-cols-1 max-2xl:gap-8 justify-items-center w-full mt-15 */}
@@ -12,7 +12,7 @@ function Speakers() {
   <div className=" flex gap-10 items-center shrink-0 min-w-full justify-around animate-scroll">
 
   {[...Array(6)].map((_, i) => (
-        <div key={i} className="w-fit h-full rounded-lg bg-[#2b1c1a] border border-[#3b2826">
+        <div key={i} className="w-fit h-full rounded-xl shadow-xl bg-[#2b1c1a] border border-[#3b2826">
           <Image
             src="/Speaker1.jpg"
             alt="Speaker"
@@ -24,7 +24,7 @@ function Speakers() {
   <h2 className="text-2xl font-bold text-white mt-2">
             Speaker {i + 1}
           </h2>
-          <p className="text-gray-400">Front-end Developer</p>
+          <p className="text-[#ff5747] font-medium">Front-end Developer</p>
  </div>
         </div>
       ))}
@@ -32,7 +32,7 @@ function Speakers() {
         <div className=" flex gap-10 items-center shrink-0 min-w-full justify-around animate-scroll">
 
   {[...Array(6)].map((_, i) => (
-        <div key={i} className="w-fit h-full rounded-lg bg-[#2b1c1a] border border-[#3b2826">
+        <div key={i} className="w-fit h-full rounded-xl shadow-xl bg-[#2b1c1a] border border-[#3b2826">
           <Image
             src="/Speaker1.jpg"
             alt="Speaker"
@@ -44,7 +44,7 @@ function Speakers() {
            <h2 className="text-2xl font-bold text-white mt-2">
             Speaker {i + 1}
           </h2>
-          <p className="text-gray-400">Front-end Developer</p>
+          <p className="text-[#ff5747] font-medium">Front-end Developer</p>
          </div>
         </div>
       ))}

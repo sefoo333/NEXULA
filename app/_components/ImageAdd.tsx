@@ -44,13 +44,13 @@ function ImageAdd({images,uploadImage}:{images:string[],uploadImage:any}) {
         </EmptyMedia>
         <EmptyTitle className='font-semibold'>No image found</EmptyTitle>
         <EmptyDescription>
-          Upload files to your product to show for your customers
+          Upload image of the conversion like instaPay, vodafone cash
         </EmptyDescription>
       </EmptyHeader>
       <EmptyContent>
         <Button className='relative' variant="outline" size="sm">
           <Input multiple type='file' onChange={(e) => uploadImag(e)} className='absolute top-0 left-0 opacity-0 w-full h-full cursor-pointer' />
-          Upload Files
+          Upload Image
         </Button>
       </EmptyContent>
     </Empty>
