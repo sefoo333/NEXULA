@@ -112,7 +112,7 @@ date:date,
   return (
     <>
     <Toaster />
-    <div className="col-span-5 my-20 max-md:mx-2">
+    <div id={"Ticket"} className="col-span-5 my-20 max-md:mx-2">
     <AnimatedBox>
       <Heading>Tickets</Heading>
           <div className="box w-300 max-2xl:w-260 max-xl:w-190 max-md:w-full bg-[#2b1c1a] border-2 border-[#3b2826] p-10 max-md:py-9 max-md:px-5 mt-10 rounded-lg">
@@ -200,16 +200,19 @@ date:date,
 
 
 <div className="buttons grid grid-cols-3 max-md:grid-cols-1 gap-6 col-span-2">
-    <Link target="_blank" href="https://maps.app.goo.gl/pmHh7SeoDkhP8tdf8?g_st=aw">
+    <Link target="_blank" href="https://maps.app.goo.gl/Cek1h1XH9DyYzKk67?g_st=aw">
     <Button variant={"outline"} className="py-6 hover:bg-[#2b1c1a] hover:border-[#3b2826] w-full cursor-pointer">
         <Map />
         Show Map
     </Button>
     </Link>
-    <Button variant={"outline"} className="py-6 hover:bg-[#2b1c1a] hover:border-[#3b2826] cursor-pointer">
+
+      <Link target="_blank" href="https://ipn.eg/S/saifeldeenabdo176/instapay/17z5bq">
+        <Button variant={"outline"} className="py-6 hover:bg-[#2b1c1a] hover:border-[#3b2826] w-full cursor-pointer">
         <Wallet />
         InstaPay
     </Button>
+    </Link>
     <Button onClick={() => navigator.clipboard.writeText("01211399401")} variant={"outline"} className="py-6 hover:bg-[#2b1c1a] hover:border-[#3b2826] cursor-pointer">
         <Copy />
         01211399401

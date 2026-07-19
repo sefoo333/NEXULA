@@ -58,12 +58,16 @@
   }
 }
 
+html {
+  scroll-behavior: smooth !important;
+
+}
+
 body {
   /* background: #0a0a0a !important; */
   color: var(--foreground);
     font-family: system-ui;
     position:relative;
-
     &:before{
   content:"";
   position:fixed;
@@ -75,6 +79,7 @@ body {
   /* background: #1d0202; */
   opacity:0.8;
 }
+
 }
 
 

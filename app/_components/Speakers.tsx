@@ -4,7 +4,7 @@ import AnimatedBox from './ui/AnimateStyle'
 
 function Speakers() {
   return (
-  <div className="box relative my-20 col-span-5 w-full">
+  <div id={"Speakers"} className="box relative my-20 col-span-5 w-full">
    <AnimatedBox>
      <Heading>Speakers</Heading>
      {/* boxs gap-20  grid grid-cols-4 max-2xl:grid-cols-2  max-md:grid-cols-1 max-2xl:gap-8 justify-items-center w-full mt-15 */}

@@ -53,15 +53,15 @@ export function NavbarPhone() {
  <nav aria-label="Global">
           <ul className="flex items-start  flex-col  font-medium ">
             <li className="p-4 px-1">
-              <a className="text-gray-100 text-lg p-5 transition hover:text-gray-500/75" href="#"> Home </a>
+              <a className="text-gray-100 text-lg p-5 transition hover:text-gray-500/75" href="#Home"> Home </a>
             </li>
 
             <li className="p-4 px-1">
-              <a className="text-gray-100 text-lg p-5 transition hover:text-gray-500/75" href="#"> Speakers </a>
+              <a className="text-gray-100 text-lg p-5 transition hover:text-gray-500/75" href="#Speakers"> Speakers </a>
             </li>
 
             <li className="p-4 px-1">
-              <a className="text-gray-100 text-lg p-5 transition hover:text-gray-500/75" href="#"> Sponsers </a>
+              <a className="text-gray-100 text-lg p-5 transition hover:text-gray-500/75" href="#Sponsers"> Sponsers </a>
             </li>
 
           </ul>

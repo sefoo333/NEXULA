@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import React from 'react'
 import { NavbarPhone } from './NavbarPhone'
+import Link from 'next/link'
 
 function Navbar() {
   return (
@@ -20,15 +21,15 @@ function Navbar() {
         <nav aria-label="Global">
           <ul className="flex items-center gap-12 font-medium ">
             <li>
-              <a className="text-gray-100 text-lg transition hover:text-gray-500/75" href="#"> Home </a>
+              <a className="text-gray-100 text-lg transition hover:text-gray-500/75" href="#Home"> Home </a>
             </li>
 
             <li>
-              <a className="text-gray-100 text-lg transition hover:text-gray-500/75" href="#"> Speakers </a>
+              <a className="text-gray-100 text-lg transition hover:text-gray-500/75" href="#Speakers"> Speakers </a>
             </li>
 
             <li>
-              <a className="text-gray-100 text-lg transition hover:text-gray-500/75" href="#"> Sponsers </a>
+              <a className="text-gray-100 text-lg transition hover:text-gray-500/75" href="#Sponsers"> Sponsers </a>
             </li>
 
           </ul>
@@ -40,9 +41,11 @@ function Navbar() {
         {/* <Button variant="outline" size="lg" className="p-3">
             Get A Ticket
         </Button> */}
+<Link href="#Ticket">
 <Button className="rounded-full max-md:hidden bg-[#8a0000] px-7 py-5 text-sm font-medium cursor-pointer text-white shadow hover:bg-[#550101] focus:outline-none focus:ring-4 ">
             Get A Ticket
 </Button>
+</Link>
         
         </div>
 

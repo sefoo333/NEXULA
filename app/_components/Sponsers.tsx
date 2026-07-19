@@ -8,7 +8,7 @@ function Sponsers() {
 
     // 'scroly col-span-5 mt-25 grid grid-cols-6 gap-20 w-full items-center justify-items-center max-xl:grid-cols-4 max-md:grid-cols-2'
     
-       <div className="box overflow-hidden flex gap-10 mb-20 w-full">
+       <div id={"Sponsers"} className="box overflow-hidden flex gap-10 mb-20 w-full">
   {/* الحاوية الأولى */}
   <div className="scroly flex gap-15 items-center shrink-0 min-w-full justify-around animate-scroll">
     {logos.map((e, a) => (
