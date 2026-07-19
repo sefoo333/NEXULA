@@ -18,7 +18,7 @@ function Speakers() {
             alt="Speaker"
             width={300}
             height={300}
-            className="rounded-lg rounded-b-none hover:grayscale-50 transition duration-300"
+            className="rounded-lg rounded-b-none  transition duration-300"
           />
  <div className="px-4 py-3">
   <h2 className="text-2xl font-bold text-white mt-2">
@@ -38,7 +38,7 @@ function Speakers() {
             alt="Speaker"
             width={300}
             height={300}
-            className="rounded-lg rounded-b-none object-contain  hover:grayscale-50 transition duration-300"
+            className="rounded-lg rounded-b-none object-contain  transition duration-300"
           />
  <div className="px-4 py-3">
            <h2 className="text-2xl font-bold text-white mt-2">
