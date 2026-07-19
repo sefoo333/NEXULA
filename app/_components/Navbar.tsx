@@ -25,12 +25,12 @@ function Navbar() {
             </li>
 
             <li>
+              <a className="text-gray-100 text-lg transition hover:text-gray-500/75" href="#Sponsers"> Sponsers </a>
+            </li>
+            <li>
               <a className="text-gray-100 text-lg transition hover:text-gray-500/75" href="#Speakers"> Speakers </a>
             </li>
 
-            <li>
-              <a className="text-gray-100 text-lg transition hover:text-gray-500/75" href="#Sponsers"> Sponsers </a>
-            </li>
 
           </ul>
         </nav>
