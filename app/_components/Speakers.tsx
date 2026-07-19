@@ -14,7 +14,7 @@ function Speakers() {
   {[...Array(6)].map((_, i) => (
         <div key={i} className="w-fit h-full rounded-xl shadow-xl bg-[#2b1c1a] border border-[#3b2826">
           <Image
-            src="/Speaker1.jpg"
+            src="/SPAEK.svg"
             alt="Speaker"
             width={300}
             height={300}
@@ -22,9 +22,9 @@ function Speakers() {
           />
  <div className="px-4 py-3">
   <h2 className="text-2xl font-bold text-white mt-2">
-            Speaker {i + 1}
+            Speaker
           </h2>
-          <p className="text-[#ff5747] font-medium">Front-end Developer</p>
+          <p className="text-[#ff5747] font-medium">Stay tuned</p>
  </div>
         </div>
       ))}
@@ -34,17 +34,17 @@ function Speakers() {
   {[...Array(6)].map((_, i) => (
         <div key={i} className="w-fit h-full rounded-xl shadow-xl bg-[#2b1c1a] border border-[#3b2826">
           <Image
-            src="/Speaker1.jpg"
+            src="/SPAEK.svg"
             alt="Speaker"
             width={300}
             height={300}
-            className="rounded-lg rounded-b-none  hover:grayscale-50 transition duration-300"
+            className="rounded-lg rounded-b-none object-contain  hover:grayscale-50 transition duration-300"
           />
  <div className="px-4 py-3">
            <h2 className="text-2xl font-bold text-white mt-2">
-            Speaker {i + 1}
+            Speaker 
           </h2>
-          <p className="text-[#ff5747] font-medium">Front-end Developer</p>
+          <p className="text-[#ff5747] font-medium">Stay tuned</p>
          </div>
         </div>
       ))}
