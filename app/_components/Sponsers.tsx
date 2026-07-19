@@ -14,7 +14,7 @@ function Sponsers() {
       <Image 
         key={`logo-${a}`} 
         src={`/SPONS.svg`} 
-        className={`${a === 4 || a === 5 ? "max-xl:col-span-2 max-md:col-span-1" : ""} object-contain max-md:w-30`} 
+        className={`${a === 4 || a === 5 ? "max-xl:col-span-2 max-md:col-span-1" : ""} object-contain max-md:w-50`} 
         alt='' 
         width={220} 
         height={35} 
@@ -27,7 +27,7 @@ function Sponsers() {
        <Image 
         key={`logo-${a}`} 
         src={`/SPONS.svg`} 
-        className={`${a === 4 || a === 5 ? "max-xl:col-span-2 max-md:col-span-1" : ""} object-contain max-md:w-30`} 
+        className={`${a === 4 || a === 5 ? "max-xl:col-span-2 max-md:col-span-1" : ""} object-contain max-md:w-50`} 
         alt='' 
         width={220} 
         height={35} 

@@ -29,7 +29,7 @@ function Hero() {
     <AnimatedBox
     >
    <div className="b relative">
-      <Image src="/He2ro.png" alt="Hero" width={700} height={700} className="z-10 max-md:w-90" />
+      <Image src="/He2ro.png" alt="Hero" width={680} height={680} className="z-10 max-md:w-90" />
       <div className="text absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transform text-center flex flex-col items-center">
         <Image src="/nexula_red.svg" alt="Nexula Logo" width={340} height={340} className="z-10 max-md:mt-5 max-md:w-48" />
         {/* <h1 className="text-4xl font-bold text-white">Nexula</h1> */}
