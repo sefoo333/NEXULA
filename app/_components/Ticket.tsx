@@ -200,7 +200,7 @@ date:date,
 
 
 <div className="buttons grid grid-cols-3 max-md:grid-cols-1 gap-6 col-span-2">
-    <Link target="_blank" href="https://maps.app.goo.gl/Cek1h1XH9DyYzKk67?g_st=aw">
+    <Link target="_blank" href="https://maps.app.goo.gl/pmHh7SeoDkhP8tdf8?g_st=aw">
     <Button variant={"outline"} className="py-6 hover:bg-[#2b1c1a] hover:border-[#3b2826] w-full cursor-pointer">
         <Map />
         Show Map

@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 
 function Hero() {
 
-    const target = new Date("2026-08-20T23:59:59").getTime();
+    const target = new Date("2026-08-11T23:59:59").getTime();
 
   const [time, setTime] = useState(target - Date.now());
 
