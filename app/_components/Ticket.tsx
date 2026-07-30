@@ -31,7 +31,7 @@ import Link from 'next/link'
  */
 
 function Ticket() {
-
+const [lock,setLock] = useState(false);
     const [images,uploadImages] = useState([]);
     const [openTicket,setOpenTicket] = useState(false);
 
@@ -51,6 +51,8 @@ const sparms = useSearchParams();
 const codeTicket = `AMB${Date.now().toString().slice(0,3)}`
 
 
+
+
 const [date, setDate] = useState<Date>()
 const sendTicket = async () => {
   
@@ -67,6 +69,13 @@ const sendTicket = async () => {
    
 
 try {
+const getValue = JSON.parse(localStorage.getItem("visited") ?? "null");
+
+if (getValue){
+  setLock(true);
+  return;
+}
+
     const values = Object.values(data).filter((e) => e != "")
  if (values.length >= 5 && images[0]){
         await addDoc(collection(db , "tickets" ) , {
@@ -222,7 +231,7 @@ date:date,
           {/* <Input type="submit" value="Send" className="col-span-2 py-5 font-semibold"  /> */}
           <Button onClick={() => sendTicket()} className="col-span-2 py-6 font-semibold bg-[#ff5747] hover:bg-[#fc4f40] cursor-pointer text-white">
             {/* <TicketIcon /> */}
-            Send Ticket
+           {lock ? "Ticket is already sent" : "Send Ticket"}
           </Button>
      </div>
 
